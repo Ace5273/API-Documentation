@@ -101,8 +101,6 @@ discount_group_name    | String          | כן | קבוצת קופון מספר
 store_layout_title     | Numeric         | כן | מוצרים בחבילה | `6`
 zap_product_type       | String          | כן | סוג מוצר | `מוצר חדש`
 store_category_group_title | String          |  לא | שם קבוצה של קטגוריה | `מכשירי חשמל`
-warranty               | String          | כן | אחריות | `5 שנים`
-store_layout_title     | String          | כן | טמפלט | `layout_item_responsive`
 shipping_option_ids    | Array           | כן | הגדר משלוחים לפי מספר מזהה ייחודי של המערכת, מספר מזהה זה אפשר לקבל במערכת קונימבו |  ["1","2"]
 
 
