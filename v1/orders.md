@@ -31,25 +31,25 @@
 
 ### פירוט השדות
 
-שם השדה | הסבר | סכמה | דוגמא
+שם השדה | סכמה | הסבר | דוגמא
 :---|---:|:---|:---
-id | מספר ההזמנה במערכת קונימבו | String | `1013564` `965487`
-payment_status | מצב ההזמנה | String | `שולם` `אשראי - מלא`
-name | שם הלקוח | String | `ישראל ישראלי`
-email | אימייל הלקוח | String | `mail@domain.com`
-phone | טלפון הלקוח | String | `055-5555555`
-address | כתובת הלקוח | String | `שם הרחוב 3, שם העיר`
-note | הערת הלקוח | String | `בבקשה להתקשר לפני שמוציאים את המשלוח`
-total_price | סך הכל לתשלום | String | `2680.5`
-status_option_title | מצב ההזמנה | String | `אשראי - מלא`
-created_at | תאריך יצירת ההזמנה | Time (ISO-8601) | `2017-01-01T17:10:37Z`
-items | פירוט המוצרים | Object | {<br>id: `1305555`,<br>title: `טלפון סלולארי`,<br>code: `SKU#123`,<br>quantity: `2`,<br>price: `2780.50`<br>}
-upgrades | פירוט השדרוגים ושיוך השדרוג למזהה מוצר המוצר הרלוונטי, מוצרים עם שדרוג מלאי יציגו את המקט שלהם | Object | {<br>"item_id": 9565999,<br>price: `100.00`,<br>title: `שדרוג ל32 ג'יגה'`,<br>topic_title: `שדרוג כרטיס הזיכרון`<br>quantity: `1`<br>inventory_code: `123546`<br>}
-discounts | פירוט ההנחות | Object | {<br>price: `200`,<br>title: `הנחה לחברים`,<br>quantity: `1`<br>}
-shipping | פרטי המשלוח | Object | {<br>id: `502135`,<br>title: `משלוח חינם בקנייה מעל 1000 שקל`,<br>price: `0`<br>}
-payments | פרטי התשלום | Object | {<br>number_of_payments: `12`,<br>special_first_payment: `237.5`,<br>single_payment: `233.0`<br>}
-credit_card_details | פרטי האשרי | Object | {<br>"credit_cart_brand_msg": "Permitted transaction.", <br>"debit_status": "AutoCommHold", <br>"credit_card_brand": "Visa", <br>"last_4d": "9999", <br>"card_expiration": "01/25", <br>"personal_id": "337655830", <br>"order_confirmation_id": "0044071", <br>"credit_cart_token": "1053655550189999", <br>"response_date": "2018-02-05T14:13:49.000Z", <br>"shovar_number": "005546"<br>"issued_credit_company": "Alphacard"<br>"issued_company_number": "6"<br>"card_sub_type": "0"<br>}
-newsletter | הרשמה לדיוור | Boolean  | <br>true<br>
+id                  | String          | מספר ההזמנה במערכת קונימבו | `1013564` `965487`
+payment_status      | String          | מצב ההזמנה | `שולם` `אשראי - מלא`
+name                | String          | שם הלקוח | `ישראל ישראלי`
+email               | String          | אימייל הלקוח | `mail@domain.com`
+phone               | String          | טלפון הלקוח | `055-5555555`
+address             | String          | כתובת הלקוח | `שם הרחוב 3, שם העיר`
+note                | String          | הערת הלקוח | `בבקשה להתקשר לפני שמוציאים את המשלוח`
+total_price         | String          | סך הכל לתשלום | `2680.5`
+status_option_title | String          | מצב ההזמנה | `אשראי - מלא`
+created_at          | Time (ISO-8601) | תאריך יצירת ההזמנה | `2017-01-01T17:10:37Z`
+items               | Object          | פירוט המוצרים | {<br>id: `1305555`,<br>title: `טלפון סלולארי`,<br>code: `SKU#123`,<br>quantity: `2`,<br>price: `2780.50`<br>}
+upgrades            | Object          | פירוט השדרוגים ושיוך השדרוג למזהה מוצר המוצר הרלוונטי, מוצרים עם שדרוג מלאי יציגו את המקט שלהם | {<br>"item_id": 9565999,<br>price: `100.00`,<br>title: `שדרוג ל32 ג'יגה'`,<br>topic_title: `שדרוג כרטיס הזיכרון`<br>quantity: `1`<br>inventory_code: `123546`<br>}
+discounts           | Object          | פירוט ההנחות | {<br>price: `200`,<br>title: `הנחה לחברים`,<br>quantity: `1`<br>}
+shipping            | Object          | פרטי המשלוח | {<br>id: `502135`,<br>title: `משלוח חינם בקנייה מעל 1000 שקל`,<br>price: `0`<br>}
+payments            | Object          | פרטי התשלום | {<br>number_of_payments: `12`,<br>special_first_payment: `237.5`,<br>single_payment: `233.0`<br>}
+credit_card_details | Object          | פרטי האשרי | {<br>"credit_cart_brand_msg": "Permitted transaction.", <br>"debit_status": "AutoCommHold", <br>"credit_card_brand": "Visa", <br>"last_4d": "9999", <br>"card_expiration": "01/25", <br>"personal_id": "337655830", <br>"order_confirmation_id": "0044071", <br>"credit_cart_token": "1053655550189999", <br>"response_date": "2018-02-05T14:13:49.000Z", <br>"shovar_number": "005546"<br>"issued_credit_company": "Alphacard"<br>"issued_company_number": "6"<br>"card_sub_type": "0"<br>}
+newsletter          | Boolean         | הרשמה לדיוור | <br>true<br>
 
 ### הזמנה
 #### תיאור
